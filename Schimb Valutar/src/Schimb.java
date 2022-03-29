@@ -24,7 +24,6 @@ Schimb(BigDecimal big, String moneda){
 	val = big.multiply(new BigDecimal(coef));
 	val = val.setScale(2, BigDecimal.ROUND_HALF_UP);
 	inter = val.divide(new BigDecimal(100));
-	System.out.println(val);
 	val= val.subtract(inter);
 	JOptionPane.showMessageDialog(frame, "Pentru suma de " + big + " lei, veti primi " + val + " " + moneda);
 }
